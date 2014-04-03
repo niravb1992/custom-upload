@@ -43,23 +43,27 @@ There are several options you can pass to prettyupload:
 ```
 $(function(){
 	$('#prettyuploader').prettyupload({
-		actualButton: '#uploader',
+	
 		/* 
 		This is the selector for the <input type="file"/> element 
 		inside your #prettyuploader element
 		*/
-		visibleButton: '#trigger',
+		actualButton: '#uploader',
+		
 		/* 
 		This is the selector for the button that is clicked to open the file chooser
 		*/
-		onChangeCallback: function(files){
+		visibleButton: '#trigger',
 		
-		} 
 		/*
 		This is the function that will be called when files have been chosen. 
 		The files parameter is an HTML5 FileList object, consisting of all 
 		the files you've selected.
 		*/
+		onChangeCallback: function(files){
+			// code
+		} 
+		
 	});
 });
 ```
