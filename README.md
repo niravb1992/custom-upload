@@ -33,7 +33,7 @@ $(function(){
 ```
 
 With the above code, when you click 'Select files', a file chooser will open, but nothing will happen when you
-select files. 
+select files. You can change that by adding the onChangeCallback option, as shown in the Options section below. 
 
 Options
 ============
@@ -42,16 +42,17 @@ There are several options you can pass to prettyupload:
 
 ```
 $(function(){
-	$('#prettyuploader').prettyupload({
+	$('#myuploader').prettyupload({
 	
 		/* 
 		This is the selector for the <input type="file"/> element 
-		inside your #prettyuploader element
+		inside your #myuploader element. Let's say it has an id of 'uploader'.
 		*/
 		actualButton: '#uploader',
 		
 		/* 
-		This is the selector for the button that is clicked to open the file chooser
+		This is the selector for the element inside your #myuploader element
+		that is clicked to open the file chooser. 
 		*/
 		visibleButton: '#trigger',
 		
