@@ -1,12 +1,21 @@
 
-$.fn.prettyupload = function(uploadTrigger, onChangeCallback){
+$.fn.prettyupload = function(options){
+	var opt = $.extend({
+		actualButton: '.prettyupload-uploader',
+		visibleButton: '.prettyupload-trigger',
+		onChangeCallback: function(files){
+		
+		}
+	}, options);
 	$(this).each(function(){
-		$(this).hide();
-		$(this).on('change',function(event){
-			onChangeCallback(event.target.files);
+		$(this).find(opt.actualButton).hide();
+		$(this).on('change', opt.actualButton, function(event){
+			if(window.FileList){
+				opt.onChangeCallback(event.target.files);
+			}
 		});
-		var original = $(this);
-		$(uploadTrigger).on('click', function(){
+		var original = $(this).find(opt.actualButton);
+		$(this).on('click',opt.visibleButton,function(){
 			original.trigger('click');
 		});
 	});
