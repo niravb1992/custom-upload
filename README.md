@@ -46,13 +46,15 @@ $(function(){
 	
 		/* 
 		This is the selector for the <input type="file"/> element 
-		inside your #myuploader element. Let's say it has an id of 'uploader'.
+		inside your #myuploader element. By default, this is assumed 
+		to have the class 'prettyupload-uploader'. 
 		*/
 		actualButton: '#uploader',
 		
 		/* 
-		This is the selector for the element inside your #myuploader element
-		that is clicked to open the file chooser. 
+		This is the selector for the element inside your #myuploader 
+		element that is clicked to open the file chooser. By default,
+		this is assumed to be an element with the class 'prettyupload-trigger'.
 		*/
 		visibleButton: '#trigger',
 		
