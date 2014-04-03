@@ -1,7 +1,7 @@
 prettyupload
 ============
 
-A jquery plugin to customize the HTML file upload button
+A jQuery plugin to customize the HTML file upload button
 
 Setup
 ============
@@ -14,19 +14,45 @@ Setup
 
 Usage
 ============
+
+In your html, create a div having two elements:
+
+```
+<div id="myuploader">
+<input type="file" class="prettyupload-uploader"/>
+<input type="button class="prettyupload-trigger" value="Select files" />
+</div>
 ```
 
-<!-- HTML -->
-<input type="file" id="someInput"/>
-<input type="button" id="yourCustomButton" value="Click to Upload!" />
+In your javascript, in jquery's dom-ready function, add the following code:
 
-<!-- JavaScript -->
-<script type="text/javascript">
-	$(function(){
-		$('#someInput').prettyupload('#yourCustomButton', function(files){
-			// A callback to determine what happens when files get selected.
-			// files is a list of files that have been selected.
-		});
+```
+$(function(){
+	$('#prettyuploader').prettyupload();
+});
+```
+
+With the above code, when you click 'Select files', a file chooser will open, but nothing will happen when you
+select files. 
+
+Options
+============
+
+There are several options you can pass to prettyupload:
+
+```
+$(function(){
+	$('#prettyuploader').prettyupload({
+		actualButton: '#uploader',
+		// this is the selector for the <input type="file"/> element inside your #prettyuploader element
+		visibleButton: '#trigger',
+		// this is the selector for the button that is clicked to open the file chooser
+		onChangeCallback: function(files){
+		
+		} 
+		// this is the function that will be called when files have been chosen. The files parameter is
+		// the HTML5 FileList object. 
 	});
-</script>
+});
 ```
+
