@@ -32,8 +32,8 @@ $(function(){
 });
 ```
 
-With the above code, when you click 'Select files', a file chooser will open, but nothing will happen when you
-select files. You can change that by adding the onChangeCallback option, as shown in the Options section below. 
+**With the above code, when you click 'Select files', a file chooser will open, but nothing will happen when you
+select files. You can change that by adding the onChangeCallback option, as shown in the Options section below.**
 
 Options
 ============
