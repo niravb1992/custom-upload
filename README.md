@@ -28,7 +28,7 @@ In your javascript, in jquery's dom-ready function, add the following code:
 
 ```
 $(function(){
-	$('#prettyuploader').prettyupload();
+	$('#myuploader').prettyupload();
 });
 ```
 
