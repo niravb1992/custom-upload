@@ -3,9 +3,7 @@ $.fn.prettyupload = function(options){
 	var opt = $.extend({
 		actualButton: '.prettyupload-uploader',
 		visibleButton: '.prettyupload-trigger',
-		onChangeCallback: function(files){
-		
-		}
+		onChangeCallback: function(files){}
 	}, options);
 	$(this).each(function(){
 		$(this).find(opt.actualButton).hide();
