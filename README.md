@@ -15,9 +15,15 @@ Setup
 Usage
 ============
 ```
+
+<!-- HTML -->
+<input type="file" id="someInput"/>
+<input type="button" id="yourCustomButton" value="Click to Upload!" />
+
+<!-- JavaScript -->
 <script type="text/javascript">
 	$(function(){
-		$('#original').prettyupload('#yourCustomButton', function(files){
+		$('#someInput').prettyupload('#yourCustomButton', function(files){
 			// A callback to determine what happens when files get selected.
 			// files is a list of files that have been selected.
 		});
