@@ -1,7 +1,7 @@
 prettyupload
 ============
 
-A jQuery plugin to customize the HTML file upload button
+A simple jQuery plugin to customize the HTML5 file upload button
 
 Setup
 ============
