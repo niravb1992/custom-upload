@@ -20,7 +20,7 @@ In your html, create a div having two elements:
 ```
 <div id="myuploader">
 <input type="file" class="prettyupload-uploader"/>
-<input type="button class="prettyupload-trigger" value="Select files" />
+<input type="button" class="prettyupload-trigger" value="Select files" />
 </div>
 ```
 
