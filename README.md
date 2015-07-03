@@ -1,7 +1,7 @@
-prettyupload
+About
 ============
 
-A jQuery plugin to customize the HTML5 file upload button. With prettyupload, you can change the way the file upload button looks and add your own functionality for when files are selected.
+prettyupload is a very simple [jQuery](https://jquery.com/) plugin to customize the HTML file upload button. With prettyupload, you can change the way the file upload button looks and add your own functionality for when files are selected.
 
 Setup
 ============
@@ -12,31 +12,31 @@ Setup
 <script src="prettyupload.js"></script>
 ```
 
-Usage
-============
+Usage Example
+=============
 
-In your html, create a div having two elements:
+1. In your html, create a div having two elements:
 
-```
-<div id="myuploader">
-<input type="file" class="prettyupload-uploader"/>
-<input type="button" class="prettyupload-trigger" value="Select files" />
-</div>
-```
+   ```
+   <div id="myuploader">
+    <input type="file" class="prettyupload-uploader"/>
+    <input type="button" class="prettyupload-trigger" value="Select files" />
+   </div>
+   ```
 
-In your javascript, in jquery's dom-ready function, add the following code:
+2. In your javascript, in jquery's dom-ready function, add the following code:
 
-```
-$(function(){
-	$('#myuploader').prettyupload();
-});
-```
+   ```
+    $(function(){
+      $('#myuploader').prettyupload();
+    });
+   ```
 
 **With the above code, when you click 'Select files', a file chooser will open, but nothing will happen when you
 select files. You can change that by adding the onChangeCallback option, as shown in the Options section below.**
 
 Options
-============
+========
 
 There are several options you can pass to prettyupload:
 
