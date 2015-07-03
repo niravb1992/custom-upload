@@ -8,7 +8,7 @@ Setup
 ```
 <!-- Include jQuery -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<!-- Include prettyupload -->
+<!-- Include custom-upload -->
 <script src="custom-upload.js"></script>
 ```
 
