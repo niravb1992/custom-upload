@@ -1,8 +1,8 @@
 
-$.fn.prettyupload = function(options){
+$.fn.customUpload = function(options){
 	var opt = $.extend({
-		actualButton: '.prettyupload-uploader',
-		visibleButton: '.prettyupload-trigger',
+		actualButton: '.custom-upload-uploader',
+		visibleButton: '.custom-upload-trigger',
 		onChangeCallback: function(files){}
 	}, options);
 	$(this).each(function(){

@@ -9,7 +9,7 @@ Setup
 <!-- Include jQuery -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <!-- Include prettyupload -->
-<script src="prettyupload.js"></script>
+<script src="custom-upload.js"></script>
 ```
 
 Usage Example
@@ -19,8 +19,8 @@ Usage Example
 
    ```
    <div id="myuploader">
-    <input type="file" class="prettyupload-uploader"/>
-    <input type="button" class="prettyupload-trigger" value="Select files" />
+    <input type="file" class="custom-upload-uploader"/>
+    <input type="button" class="custom-upload-trigger" value="Select files" />
    </div>
    ```
 
@@ -28,7 +28,7 @@ Usage Example
 
    ```
     $(function(){
-      $('#myuploader').prettyupload();
+      $('#myuploader').customUpload();
     });
    ```
 
@@ -38,23 +38,23 @@ select files. You can change that by adding the onChangeCallback option, as show
 Options
 ========
 
-There are several options you can pass to prettyupload:
+There are several options you can pass to custom-upload:
 
 ```
 $(function(){
-	$('#myuploader').prettyupload({
+	$('#myuploader').customUpload({
 	
 		/* 
 		This is the selector for the <input type="file"/> element 
 		inside your #myuploader element. By default, this is assumed 
-		to be '.prettyupload-uploader'. 
+		to be '.custom-upload-uploader'. 
 		*/
 		actualButton: '#uploader',
 		
 		/* 
 		This is the selector for the element inside your #myuploader 
 		element that is clicked to open the file chooser. By default,
-		this is assumed to be '.prettyupload-trigger'.
+		this is assumed to be '.custom-upload-trigger'.
 		*/
 		visibleButton: '#trigger',
 		
