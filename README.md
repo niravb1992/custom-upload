@@ -1,7 +1,7 @@
 About
 ============
 
-prettyupload is a very simple [jQuery](https://jquery.com/) plugin to customize the HTML file upload button. With prettyupload, you can change the way the file upload button looks and add your own functionality for when files are selected.
+custom-upload is a very simple [jQuery](https://jquery.com/) plugin to customize the HTML file upload button. With prettyupload, you can change the way the file upload button looks and add your own functionality for when files are selected.
 
 Setup
 ============
